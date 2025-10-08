@@ -1,10 +1,9 @@
-'use client';
 import ThemeToggle from './ThemeToggle';
 
 export default function Navbar() {
   return (
-    <nav className="flex justify-between items-center py-4 px-8 bg-gray-100 dark:bg-gray-800 shadow-md sticky top-0 z-50">
-      <span className="text-2xl font-bold">Benjamin</span>
+    <nav className="flex justify-between items-center p-4 border-b border-gray-200 dark:border-gray-700">
+      <h1 className="text-xl font-bold">Mi Portafolio</h1>
       <ThemeToggle />
     </nav>
   );

@@ -1,21 +1,21 @@
 import './globals.css';
 import { ReactNode } from 'react';
 import Navbar from './components/Navbar';
-import Footer from './components/Footer';
+import ThemeProviderWrapper from './components/ThemeProviderWrapper';
 
 export const metadata = {
-  title: 'Portafolio Benjamin',
-  description: 'Portafolio profesional de Benjamin Millalonco',
+  title: 'Portafolio',
+  description: 'Mi portafolio con Next.js y Tailwind v4',
 };
 
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
-    <html lang="es">
-      <head />
-      <body className="bg-white text-gray-900 dark:bg-gray-900 dark:text-white transition-colors">
-        <Navbar />
-        <main className="min-h-screen p-6 md:p-12">{children}</main>
-        <Footer />
+    <html lang="es" suppressHydrationWarning>
+      <body className="bg-background text-foreground transition-colors duration-300">
+        <ThemeProviderWrapper>
+          <Navbar />
+          {children}
+        </ThemeProviderWrapper>
       </body>
     </html>
   );
