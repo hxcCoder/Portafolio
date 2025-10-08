@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+<<<<<<< HEAD
     "target": "ESNext",
     "module": "node16",
     "lib": [
@@ -14,6 +15,17 @@
     "noEmit": true,
     "esModuleInterop": true,
     "moduleResolution": "node16",
+=======
+    "target": "ES2017",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "bundler",
+>>>>>>> 3dbec25b30e9a9c0f89e2fb301592537d688039e
     "resolveJsonModule": true,
     "isolatedModules": true,
     "jsx": "preserve",
@@ -22,6 +34,7 @@
       {
         "name": "next"
       }
+<<<<<<< HEAD
     ]
   },
   "include": [
@@ -34,4 +47,13 @@
   "exclude": [
     "node_modules"
   ]
+=======
+    ],
+    "paths": {
+      "@/*": ["./*"]
+    }
+  },
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+  "exclude": ["node_modules"]
+>>>>>>> 3dbec25b30e9a9c0f89e2fb301592537d688039e
 }
